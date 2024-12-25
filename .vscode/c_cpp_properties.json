@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x86",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\shiv\\OneDrive\\Desktop\\curls\\curl\\include",
+                "C:\\Users\\shiv\\Downloads\\websocket\\libwebsockets\\include",
+                "C:\\Users\\shiv\\Downloads\\jsonsocket\\jsoncpp\\include"
+            ],
+            "compilerPath": "C:/MinGW/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x86",
+            "compilerArgs": []
+        }
+    ],
+    "version": 4
+}
