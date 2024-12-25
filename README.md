@@ -31,24 +31,30 @@ This is a high-performance order execution and management system built to trade 
 ## Latency Benchmarking
 
 ### Key Metrics:
-1. **Order Placement Latency**: Time taken to send an order and receive acknowledgment from the Deribit API.
-2. **Market Data Processing Latency**: Time to process market data after receiving it.
-3. **WebSocket Message Propagation Delay**: Delay from message sending to receiving over WebSocket.
-4. **End-to-End Trading Loop Latency**: Total time from data reception to order placement and confirmation.
-
-**Note**: Benchmarking will be implemented in future versions.
+1. **Order Placement Latency**: Measures the time taken to send an order and receive acknowledgment from the Deribit API.
+2. **Market Data Processing Latency**: Time to process the market data after it is received.
+3. **WebSocket Message Propagation Delay**: Measures the delay between sending and receiving a WebSocket message.
+4. **End-to-End Trading Loop Latency**: The total time taken from receiving market data to placing an order and confirming the execution.
 
 ---
 
 ## Optimization Techniques
 
 ### Areas of Focus:
-1. **Memory Management**: Optimizing memory allocation and deallocation to reduce overhead.
-2. **Network Communication**: Minimize unnecessary requests; consider WebSocket for real-time updates.
-3. **Data Structure Selection**: Use efficient structures (e.g., hash maps, heaps) for fast data processing.
-4. **Thread Management**: Implement multi-threading for concurrent operations.
-5. **CPU Optimization**: Profile CPU usage to optimize resource-intensive tasks.
+1. **Memory Management**: Optimized memory allocation and deallocation to reduce overhead.
+2. **Network Communication**: Minimized unnecessary network requests to optimize communication.
+3. **Data Structure Selection**: Utilized efficient data structures (e.g., hash maps, arrays) for fast data processing.
+4. **Thread Management**: Implemented basic multi-threading for concurrent order execution and market data processing.
+5. **CPU Optimization**: Applied basic CPU optimization to reduce processing time for intensive tasks.
 
+---
+
+## Performance Metrics
+
+1. **Before Optimization**: Performance metrics are captured to assess the initial latency and resource consumption.
+2. **After Optimization**: Performance improvements have been made in network and memory usage for faster order execution.
+
+---
    
 # Order Execution and Management System Flow
 
