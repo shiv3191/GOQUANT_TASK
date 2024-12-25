@@ -29,4 +29,45 @@ This is a high-performance order execution and management system built to trade 
 5. **Boost** libraries
 
 
+### Flow Chart
+Start
+  |
+  v
+Initialize Connection to Deribit API
+  |
+  v
+User Inputs Order Details
+  |
+  v
+Validate Inputs -------------------> [Error] ---> End
+  |
+  v
+Create Order
+  |
+  v
+Send Order to Deribit API
+  |
+  v
+Wait for Response
+  |
+  v
+Order Rejected --------------------> [Error] ---> End
+  |
+  v
+Order Confirmation
+  |
+  v
+Track Order Status
+  | 
+  v
+[Order Filled] ---> Process Order ---> End
+  |
+  v
+[Order Open] ---> Wait or Cancel Order
+  |
+  v
+End
+
+
+
 
