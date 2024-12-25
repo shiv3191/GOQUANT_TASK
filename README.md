@@ -28,7 +28,28 @@ This is a high-performance order execution and management system built to trade 
 4. **jsoncpp** for JSON parsing
 5. **Boost** libraries
 
+## Latency Benchmarking
 
+### Key Metrics:
+1. **Order Placement Latency**: Time taken to send an order and receive acknowledgment from the Deribit API.
+2. **Market Data Processing Latency**: Time to process market data after receiving it.
+3. **WebSocket Message Propagation Delay**: Delay from message sending to receiving over WebSocket.
+4. **End-to-End Trading Loop Latency**: Total time from data reception to order placement and confirmation.
+
+**Note**: Benchmarking will be implemented in future versions.
+
+---
+
+## Optimization Techniques
+
+### Areas of Focus:
+1. **Memory Management**: Optimizing memory allocation and deallocation to reduce overhead.
+2. **Network Communication**: Minimize unnecessary requests; consider WebSocket for real-time updates.
+3. **Data Structure Selection**: Use efficient structures (e.g., hash maps, heaps) for fast data processing.
+4. **Thread Management**: Implement multi-threading for concurrent operations.
+5. **CPU Optimization**: Profile CPU usage to optimize resource-intensive tasks.
+
+   
 # Order Execution and Management System Flow
 
 The following flowchart illustrates the process of executing and managing orders on the Deribit Test platform:
