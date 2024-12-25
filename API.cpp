@@ -4,8 +4,8 @@
 
 // Deribit API Base URL and credentials
 const std::string BASE_URL = "https://test.deribit.com";
-std::string client_id = "k1yYryQI";
-std::string client_secret = "IspiDSwNfMqd0igwEi_cMWQQkwcD3plXicc6lq2gw64";
+std::string client_id = "your_client_id";
+std::string client_secret = "your_client_secret";
 std::string access_token;
 
 // Perform HTTP POST request and return the response
